@@ -17,10 +17,19 @@ git clone -b upgrade_contract https://github.com/Apron-Network/apron-node.git
 
 ```bash
 rustup default nightly-2021-11-08
-rustup add target wasm32-unknown-unknown
+rustup target add wasm32-unknown-unknown
+
 cd apron-node
 cargo build --release
 ```
+
+###  PORT
+sudo ufw reload
+sudo ufw disable
+sudo ufw enable
+
+###  Dev
+sudo apt-get install ruby-dev
 
 ### Run
 
